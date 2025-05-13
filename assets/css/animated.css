@@ -1,3 +1,31 @@
+.animated-online {
+  font-weight: bold;
+  font-size: 5em;
+  background: linear-gradient(
+    90deg,
+    #00C40D 0%,
+    #00C40D 45%,
+    #ffffff 50%,
+    #00C40D 55%,
+    #00C40D 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 .animated-ip {
   position: relative;
   display: inline-block;
