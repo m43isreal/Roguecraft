@@ -1,0 +1,136 @@
+.animated-ip {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 45%,
+    #000000 50%,
+    #ffffff 55%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+  text-shadow: 0 -1px white;
+}
+
+.animated-ip::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+  animation: underline-glow 2s infinite;
+}
+@keyframes underline-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px green;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 20px white;
+    opacity: 0.6;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animated-ver {
+  font-weight: bold;
+  font-size: 1em;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 45%,
+    #000000 50%,
+    #ffffff 55%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animated-title {
+  font-weight: bold;
+  font-size: 2em;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 45%,
+    #000000 50%,
+    #ffffff 55%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  text-shadow: 0 -1px white;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animated-title1 {
+  font-weight: bold;
+  font-size: 5em;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 45%,
+    #ffffff 50%,
+    #000000 55%,
+    #000000 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
